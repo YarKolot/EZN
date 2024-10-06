@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -67,7 +71,7 @@ nav a::after {
 }
 
 nav a:hover::after {
-    width: 100%; /* Ширина линии при наведении */
+    width: 100%;
 }
 
 h2 {
@@ -191,6 +195,16 @@ footer {
 
 #contact p {
     font-size: 2vh;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 2vh;
+    color: white;
+}
+
+footer a:hover {
+    color:whitesmoke;
 }
 
 @media (max-width: 800px) {
