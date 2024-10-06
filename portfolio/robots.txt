@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /tmp/
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://yarkolot.github.io/EZN/portfolio/sitemap.xml
