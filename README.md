@@ -1,1 +1,1 @@
-# EZN
+Zadania z EZN
