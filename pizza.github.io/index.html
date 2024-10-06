@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pizza recipies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial;
+      margin: 0;
+      color: white;
+    }
+
+    body p {
+      font-size: 2vh;
+      text-align: justify;
+    }
+
+    body ul {
+      font-size: 2vh;
+    }
+
+    body a {
+      font-size: 2vh;
+    }
+
+    body h1 {
+      font-size: 4.5vh;
+    }
+
+    body h2 {
+      font-size: 3vh;
+      text-transform: uppercase;
+    }
+
+    body h3 {
+      font-size: 2.5vh;
+    }
+
+    .text_center {
+      text-align: center;
+    }
+
+    .main_header {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .part1 {
+      width: 100%;
+      background-color: green;
+    }
+
+    .part2 {
+      padding: 50px;
+      text-align: center;
+      width: 100%;
+      background-color: white;
+      color: black;
+    }
+
+    .part3 {
+      width: 100%;
+      background-color: red;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      background-color: #000000;
+      border-top: #000000 solid 1px;
+      border-top: #000000 solid 1px;
+    }
+
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      width: 100%;
+      padding: 15px;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .row {  
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .side {
+      flex: 35%;
+      background-color: rgb(50, 50, 50);
+      padding: 20px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 5%;
+    }
+
+    .galery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding:auto;
+      margin:auto;
+      width: 100%;
+    }
+
+    .galery img {
+      height: 30vw;
+    }
+
+    .not_last {
+      padding-left: 5px;
+    }
+
+    .main {
+      flex: 65%;
+      background-color: rgb(70, 70, 70);
+      padding: 20px;
+    }
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #000000;
+    }
+
+    @media screen and (max-width: 900px) {
+      .row, .navbar {
+        flex-direction: column;
+      }
+      .footer {
+        background-color: rgb(50, 50, 50);
+      }
+      .galery img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="main_header">
+      <div class = "part1"></div>
+      <div class = "part2"><h1>Pizza recipes</h1></div>
+      <div class = "part3"></div>
+    </div>
+
+    <div class="navbar">
+      <a href="index.html">Cheese Pizza</a>
+      <a href="pepperoni.html">Pepperoni Pizza</a>
+      <a href="meat.html">Meat Pizza</a>
+    </div>
+
+    <div class="row">
+
+      <div class="side">
+
+        <h2>About the pizza</h2>
+        <h3>History</h3>
+        <p>Cheese pizza traces its roots to Naples, Italy, in the late 18th century. The original Neapolitan pizza was a simple flatbread topped with tomatoes, which were newly introduced to Europe. In the 1880s, a baker named Raffaele Esposito created the famous Pizza Margherita for Queen Margherita of Italy, using tomatoes, mozzarella cheese, and basil to represent the colors of the Italian flag. This version, featuring cheese as a central topping, became iconic.</p>
+        <img class = "not_last" alt = "Naples" src="img/cheese_p/1.jpg">
+
+        <h3>Overal description</h3>
+        <p>Cheese pizza features a flatbread crust topped with tomato sauce and melted mozzarella. The simple combination of crispy crust, tangy sauce, and rich cheese creates a classic, flavorful dish that’s beloved worldwide.</p>
+        <img alt = "Cheese pizza" src="img/cheese_p/2.jpg">
+        
+      </div>
+
+      <div class="main">
+
+        <h2 class = "text_center">Ingredients</h2>
+        <h3>Pizza dough<h3>
+        <ul>
+          <li>2 ½ cups all-purpose flour</li>
+          <li>1 tsp sugar</li>
+          <li>1 tsp salt</li>
+          <li>1 tbsp olive oil</li>
+          <li>1 tsp instant yeast</li>
+          <li>1 cup warm water</li>
+        </ul>
+        <h3>Pizza sauce<h3>
+        <ul>
+          <li>1 cup canned tomato sauce</li>
+          <li>1 tsp olive oil</li>
+          <li>1 clove garlic (minced)</li>
+          <li>1 tsp dried oregano</li>
+          <li>1 tsp instant yeast</li>
+          <li>Salt and pepper to taste</li>
+        </ul>
+        <h3>Toppings<h3>
+        <ul>
+          <li>2 cups shredded mozzarella cheese</li>
+          <li>Olive oil (for brushing the crust)</li>
+        </ul>
+
+        <h2 class = "text_center">Instructions</h2>
+        <h3>Prepare the dough</h3>
+        <ul>
+          <li>Mix the warm water and yeast; let it sit for 5 minutes.</li>
+          <li>In a bowl, combine flour, sugar, and salt. Add the yeast mixture and olive oil, and mix until a dough forms.</li>
+          <li>Knead the dough for 5-7 minutes until smooth. Cover and let rise for 1 hour.</li>
+        </ul>
+        <h3>Make the sauce</h3>
+        <p>In a saucepan, heat olive oil and sauté garlic until fragrant. Add tomato sauce, oregano, salt, and pepper. Simmer for 10 minutes.</p>
+        <h3>Assemble the pizza</h3>
+        <ul>
+          <li>Preheat the oven to 245°C.</li>
+          <li>Roll out the dough on a floured surface into a circle.</li>
+          <li>Transfer to a baking sheet or pizza stone. Spread the sauce over the dough, leaving a small border for the crust.</li>
+          <li>Sprinkle the mozzarella cheese evenly over the sauce.</li>
+        </ul>
+        <h3>Bake</h3>
+        <ul>
+          <li>Bake for 10-12 minutes, or until the crust is golden and the cheese is bubbly and slightly browned.</li>
+          <li>Brush the crust with olive oil for extra flavor.</li>
+        </ul>
+        <h3>Serve</h3>
+        <p>Let it cool slightly, slice, and enjoy!</p>
+
+      </div>  
+
+    </div>
+
+    <div class="footer">
+      <h2 class = "text_center">Final result</h2>
+        <div class = "galery">
+          <div>
+            <img alt = "Final result" src = "img/cheese_p/4.webp">
+          </div>
+          <div>
+            <img alt = "Final result" src = "img/cheese_p/3.webp">
+          </div>    
+        </div>
+    </div>
+
+  </body>
+</html>

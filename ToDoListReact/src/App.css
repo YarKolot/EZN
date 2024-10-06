@@ -1,0 +1,22 @@
+body {
+  background: #333;
+  color: white;
+  margin: 0;
+}
+
+.main {
+  background-color: black;
+  border: white solid 1px;
+  margin: auto;
+  padding: 1vw;
+  width: 50%;
+  border-radius: 15px;
+  font-size: 1vw;
+  margin-top: 1vh;
+}
+
+.main h1 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1vh;
+}

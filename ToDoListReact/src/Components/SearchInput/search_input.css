@@ -1,0 +1,12 @@
+.search_input {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 83%;
+    font-size: 1vw;
+    padding: 1vh;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid red;
+    background-color: whitesmoke;
+}

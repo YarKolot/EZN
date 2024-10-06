@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pizza recipies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial;
+      margin: 0;
+      color: white;
+    }
+
+    body p {
+      font-size: 2vh;
+      text-align: justify;
+    }
+
+    body ul {
+      font-size: 2vh;
+    }
+
+    body a {
+      font-size: 2vh;
+    }
+
+    body h1 {
+      font-size: 4.5vh;
+    }
+
+    body h2 {
+      font-size: 3vh;
+      text-transform: uppercase;
+    }
+
+    body h3 {
+      font-size: 2.5vh;
+    }
+
+    .text_center {
+      text-align: center;
+    }
+
+    .main_header {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .part1 {
+      width: 100%;
+      background-color: green;
+    }
+
+    .part2 {
+      padding: 50px;
+      text-align: center;
+      width: 100%;
+      background-color: white;
+      color: black;
+    }
+
+    .part3 {
+      width: 100%;
+      background-color: red;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      background-color: #000000;
+      border-top: #000000 solid 1px;
+      border-top: #000000 solid 1px;
+    }
+
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      width: 100%;
+      padding: 15px;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .row {  
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .side {
+      flex: 35%;
+      background-color: rgb(50, 50, 50);
+      padding: 20px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 5%;
+    }
+
+    .galery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding:auto;
+      margin:auto;
+      width: 100%;
+    }
+
+    .galery img {
+      height: 30vw;
+    }
+
+    .not_last {
+      padding-left: 5px;
+    }
+
+    .main {
+      flex: 65%;
+      background-color: rgb(70, 70, 70);
+      padding: 20px;
+    }
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #000000;
+    }
+
+    @media screen and (max-width: 900px) {
+      .row, .navbar {
+        flex-direction: column;
+      }
+      .footer {
+        background-color: rgb(50, 50, 50);
+      }
+      .galery img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="main_header">
+      <div class = "part1"></div>
+      <div class = "part2"><h1>Pizza recipes</h1></div>
+      <div class = "part3"></div>
+    </div>
+
+    <div class="navbar">
+      <a href="index.html">Cheese Pizza</a>
+      <a href="pepperoni.html">Pepperoni Pizza</a>
+      <a href="meat.html">Meat Pizza</a> 
+    </div>
+
+    <div class="row">
+      
+      <div class="side">
+        <h2>About the pizza</h2>
+        <h3>History</h3>
+        <p>Pepperoni pizza originated in the U.S., not Italy. While pizza has roots in Italy, pepperoni—spicy, cured sausage made from pork and beef—is an American invention. Italian immigrants brought pizza to the U.S. in the early 20th century, and pepperoni, inspired by Italian salamis but adapted with American tastes in mind, became a popular topping.</p>
+        <p>Pepperoni pizza gained widespread popularity after World War II, especially with the rise of pizza chains like Domino’s and Pizza Hut. Today, it's the most popular pizza topping in the U.S., recognized globally as a symbol of American cuisine.</p>
+        <img alt = "US Pepperoni" src="img/pepperoni_p/1.jpg">
+
+        <h3>Overal description</h3>
+        <p>Pepperoni pizza is a classic dish made with a thin or thick crust, topped with tomato sauce, mozzarella cheese, and slices of spicy pepperoni. The pepperoni gets crispy and slightly greasy when baked, adding a savory, smoky flavor to the pizza. It's one of the most popular pizza varieties, known for its rich, bold taste and satisfying combination of cheese and cured meat.</p>
+        <img alt = "Pepperoni" src="img/pepperoni_p/2.jpg">
+      </div>
+
+      <div class="main">
+
+        <h2 class = "text_center">Ingredients</h2>
+        <h3>Pizza dough<h3>
+        <ul>
+          <li>2 ½ cups all-purpose flour</li>
+          <li>1 tsp sugar</li>
+          <li>1 tsp salt</li>
+          <li>1 tbsp olive oil</li>
+          <li>1 tsp instant yeast</li>
+          <li>1 cup warm water</li>
+        </ul>
+        <h3>Pizza sauce<h3>
+        <ul>
+          <li>1 cup canned tomato sauce</li>
+          <li>1 tsp olive oil</li>
+          <li>1 clove garlic (minced)</li>
+          <li>1 tsp dried oregano</li>
+          <li>1 tsp instant yeast</li>
+          <li>Salt and pepper to taste</li>
+        </ul>
+        <h3>Toppings<h3>
+        <ul>
+          <li>2 cups shredded mozzarella cheese</li>
+          <li>Pepperoni slices</li>
+          <li>Olive oil (for brushing the crust)</li>
+        </ul>
+
+        <h2 class = "text_center">Instructions</h2>
+        <h3>Prepare the dough</h3>
+        <ul>
+          <li>Combine 1 cup of warm water and 1 tsp instant yeast. Let it sit for 5 minutes.</li>
+          <li>In a bowl, mix 2 ½ cups all-purpose flour, 1 tsp sugar, and 1 tsp salt. Add the yeast mixture and 1 tbsp olive oil. Mix until a dough forms.</li>
+          <li>Knead for 5-7 minutes until smooth. Cover and let it rise for 1 hour.</li>
+        </ul>
+        <h3>Make the sauce</h3>
+        <ul>
+          <li>In a saucepan, heat 1 tsp olive oil and sauté 1 minced garlic clove until fragrant.</li>
+          <li>Add 1 cup of canned tomato sauce, 1 tsp dried oregano, salt, and pepper to taste. Simmer for 10 minutes.</li>
+        </ul>
+        <h3>Assemble the pizza</h3>
+        <ul>
+          <li>Preheat the oven to 245°C.</li>
+          <li>On a floured surface, roll the dough into a circle.</li>
+          <li>Transfer the dough to a baking sheet or pizza stone. Spread the sauce over the dough, leaving a small border for the crust.</li>
+          <li>Sprinkle 2 cups of shredded mozzarella cheese evenly over the sauce. Top with pepperoni slices.</li>
+        </ul>
+        <h3>Bake</h3>
+        <ul>
+          <li>Bake for 10-12 minutes, or until the crust is golden and the cheese is bubbly and slightly browned.</li>
+          <li>Brush the crust with olive oil for extra flavor.</li>
+        </ul>
+        <h3>Serve</h3>
+        <p>Let it cool slightly, slice, and enjoy!</p>
+
+      </div>  
+
+    </div>
+
+    <div class="footer">
+      <h2 class = "text_center">Final result</h2>
+        <div class = "galery">
+          <div>
+            <img alt = "Final result" src = "img/pepperoni_p/3.jpg">
+          </div>
+          <div>
+            <img alt = "Final result" src = "img/pepperoni_p/4.jpg">
+          </div>
+        </div>
+    </div>
+
+  </body>
+</html>

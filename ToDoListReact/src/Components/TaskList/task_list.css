@@ -1,0 +1,40 @@
+.tasklist {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tasklist li {
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0;
+  }
+  
+  .tasklist div {
+    color: black;
+    width: 70%;
+    font-size: 1vw;
+    padding: 1vh;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid red;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+  }
+  
+  .tasklist button {
+    width: 15%;
+    padding: 1vh;
+    font-size: 1vw;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid red;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  .tasklist button:hover {
+    background-color: #444;
+  }
+  
