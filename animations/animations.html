@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animations x_x</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .a1 {
+                margin: auto;
+                margin-top: 1vw;
+                width: 95vw;
+                height: 45vw;
+                border-radius: 30px;
+                background-color: greenyellow;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .s1 {
+                background-color: black;
+                width: 90vw;
+                height: 40vw;
+                border-radius: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .s2 {
+                background-color: black;
+                width: 85vw;
+                height: 35vw;
+                border: solid 3px white;
+                border-radius: 30px;
+            }
+            .precenter {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .center {
+                background-color: greenyellow;
+                width: 80vw;
+                height: 30vw;
+                border-radius: 30px;
+            }
+            .box {
+                width: 5vw;
+                height: 3vw;
+                animation: move 12s infinite ease-in-out;
+                offset-path: padding-box;
+                offset-distance: 0%;
+            }
+            
+            @keyframes move {
+                0%,
+                20% {
+                offset-distance: 0%;
+                }
+                80%,
+                100% {
+                offset-distance: 100%;
+                }
+            }
+            
+            .a2 {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                width: 95vw;
+                height: 45vw;
+                background-color: skyblue;
+                margin: auto;
+                margin-top: 1vw;
+                border-radius: 30px;
+                margin-bottom: 1vw;
+            }
+            .platform {
+                background-color: black;
+                width: 15%;
+                height: 2vw;
+                margin-left: 5vw;
+                margin-right: 5vw;
+            }
+            .helicopter {
+                position: relative;
+                top: -2vw;
+                left: 0;
+                width: 7vw;
+                height: 4vw;
+                animation: heli 10s linear infinite;
+            }
+            @keyframes heli {
+                0% {
+                  transform: rotate(0) translate(-35vw) rotate(0) rotateY(0);
+                }
+              
+                25% {
+                  transform: rotate(180deg) translate(-35vw) rotate(-180deg) rotateY(0);
+                }
+                50% {
+                    transform: rotate(180deg) translate(-35vw) rotate(-180deg) rotateY(180deg);
+                }
+                75% {
+                    transform: rotate(0) translate(-35vw) rotate(0) rotateY(180deg);
+                }
+                100% {
+                    transform: rotate(0) translate(-35vw) rotate(0) rotateY(0);
+                }
+              }
+        </style>
+    </head>
+    <body>
+        <div class="a1">
+            <div class="s1">
+                <div class="s2">
+                    <div class="box"><img alt="car" src="1.png" style="width:100%"></div>
+                    <div class="precenter"><div class="center"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="a2">
+            <div class="platform"></div>
+            <div class="helicopter"><img alt="Helicopter" src="h.webp" style="width: 100%"></div>
+            <div class="platform"></div>
+        </div>
+    </body>
+</html>
